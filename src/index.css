@@ -1,0 +1,56 @@
+:root {
+	--VeryDarkGray: hsl(0, 0%, 17%);
+	--DarkGray: hsl(0, 0%, 59%);
+}
+
+body {
+	background: url("assets/images/pattern-bg.png") no-repeat;
+	background-size: 100vw 35vh;
+	background-position: top center;
+	font-family: Rubik, system-ui;
+	color: var(--VeryDarkGray);
+	text-align: center;
+	min-height: 100vh;
+}
+
+@font-face {
+	font-family: Rubik;
+	src: url(assets/fonts/Rubik-Bold.ttf);
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Rubik;
+	src: url(assets/fonts/Rubik-Medium.ttf);
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Rubik;
+	src: url(assets/fonts/Rubik-Regular.ttf);
+	font-weight: 400;
+	font-display: swap;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	height: 1.1em;
+	width: 1.1em;
+	background: url(./assets/icons/close.svg) no-repeat 50% 50%;
+	background-size: contain;
+}
+
+input[type="search"]:hover::-webkit-search-cancel-button {
+	opacity: .8;
+	cursor: pointer;
+}
+
+#map {
+	width: 100vw;
+	height: 65vh;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+}
